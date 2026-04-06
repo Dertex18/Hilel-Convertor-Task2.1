@@ -8,9 +8,12 @@ public class Main {
             System.out.println("Version 1.0");
 
             double miles = 12;
-
+            double kilometers = 34;
             double resultInKm = convertMilesToKilometers(miles);
-            System.out.println("Result is " + resultInKm + " kilometers");
+            double resultInMiles = convertKilometersToMiles(kilometers);
+            System.out.println("Result is " + resultInKm + " kilometers and " + resultInMiles + " miles");
+
+
 
     }
 
@@ -18,4 +21,7 @@ public class Main {
         return miles*km;
     }
 
+    private static double convertKilometersToMiles(double kilometers) {
+        return kilometers/km;
+    }
 }
