@@ -12,7 +12,7 @@ public class Main {
         double kilometers = 34;
         double resultInKm = convertMilesToKilometers(miles);
         double resultInMiles = convertKilometersToMiles(kilometers);
-        System.out.println("Result is " + resultInKm + " kilometers and " + resultInMiles + " miles");
+        System.out.printf("Result is %.2f kilometers and %.2f miles%n".formatted(resultInKm, resultInMiles));
     }
 
     private static double convertMilesToKilometers(double miles) {
